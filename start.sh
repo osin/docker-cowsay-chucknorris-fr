@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+curl 'http://www.chucknorrisfacts.fr/api/get?data=tri:alea;type:txt;nb:1' -H 'User-Agent: Ubuntu Chromium/59.0.3071.109' -H 'Accept: text' -s | jq -r '.[].fact' | html2text | /usr/games/cowsay
